@@ -8,28 +8,26 @@
 	},
 
 	"contact": {
-		"web": "rocher-ensoleille.fr/cv",
-		"mail": "mmarec@univ-lemans.fr",
-		"phone": "+33 (0)6 52 36 91 76",
+		"web": 		"rocher-ensoleille.fr/cv",
+		"mail": 	"mmarec@univ-lemans.fr",
+		"phone": 	"+33 (0)6 52 36 91 76",
 		"address1": "1, rue Notre Dame",
 		"address2": "72000 Le Mans, France",
-		"photo": "layout/photo.png"
+		"photo": 	"layout/photo.png"
 	},
 
 	"skills": [
 		"Data analysis and depiction",
-		"Presentations",
-		"Project organisation",
-		"Problem solving with numerical tools"
+		"Scientific presentations",
+		"Project management"
 	],
 
 	"knowledge": [
-		"Wave propagation (EM, acoustics)",
-		"Poroelastic waves in periodic geometries",
+		"Acoustic propagation in solids and fluids",
 		"Numerical methods",
-		"Guided waves",
-		"Differential calculus, Linear Algebra",
-		"Signal processing, instrumentation"
+		"Waves in periodic guides",
+		"Differential calculus and Linear Algebra",
+		"Notions on Signal processing and instrumentation"
 	],
 
 	"programming": [
@@ -42,7 +40,7 @@
 	"softwares": [
 		"COMSOL Multiphysics",
 		"Inkscape",
-		"MS Office",
+		"Reaper",
 		"Adobe Suite"
 	],
 
@@ -59,7 +57,7 @@
 			"place": "Le Mans, France", 
 			"when": "Oct. 2022 - December 2025", 
 			"comment": [
-				"University doctoral Scholarship at Laboratoire d'Acoustique de l'Université du Mans",
+				"University Doctoral Scholarship at Laboratoire d'Acoustique de l'Université du Mans",
 				"Research on metaporoelastic surfaces and interfaces for the joint mitigation of acoustic and elastic energies",
 				"Numerical methods for the computation of dispersion relations",
 				"Teaching experience: Master course on TMM and bachelor-level acoustics practicals sessions"
@@ -72,9 +70,9 @@
 			"place": "Le Mans, France", 
 			"when": "Sept. 2020 - July 2022", 
 			"comment": [
-				"International Master's degree in Wave physics and Acoustics",
+				"International Masters degree in Wave physics and Acoustics",
 				"2 year-long project on acoustic absorption by metaporoelastic materials",
-				"Education on academic research and various topics on wave propagation and phenomena"
+				"Education on academic research and topics on wave propagation phenomena"
 			]
 		},
 		{
@@ -82,10 +80,7 @@
 			"organisation": "Czech Technical University", 
 			"place": "Prague, Czech Rep.", 
 			"when": "Sept. 2019 - June 2020", 
-			"comment": [
-				"Last year of Bachelor at CTU, Prague",
-				"Projects on wireless communication and radio antennas and acoustic event detection with a microphone array"
-			]
+			"comment": ["Last year of Bachelor at CTU, Prague"]
 		},
 		{
 			"name":"Licence SPI CMI", 
@@ -93,29 +88,20 @@
 			"place": "Le Mans, France", 
 			"when": "Sept. 2017 - June 2020", 
 			"comment": [
-				"Licence de sciences pour l'ingénieur (engineering sciences), acoustics and vibrations",
-				"Internship: Acoustic study of a ball impact on a water surface"
-			]
-		},
-
-		{
-			"name":"Baccalauréat scientifique", 
-			"organisation": "Lycée Cassini", 
-			"place": "Clermont de l'Oise", 
-			"when": "July 2017", 
-			"comment": [
-				"Mention très bien"
+				"Acoustics and vibrations bachelor",
+				"Project: Acoustic study of a ball impact on a water surface, Internship: Environmental acoustics at Nereis Environnement (Carquefou France)"
 			]
 		}
-
 	],
 
 	"publications": [
 		"A general spectral collocation method for computing the dispersion relations of guided acoustic waves in multilayer dissipative structures in J. Appl. Phys. 137 (10) 104902. 2025",
-		""	
+		"Numerical models for the scattering properties of multilayered structures with periodic cells (submitted to Int. J. Numer. Methods Eng.)",	
+		"Computation of leaky complex modes of a metaporous layer with rigid inclusions (submitted to Phys. Rev. B)"	
 	],
 	"interests": [
-		"Sound Synthesis and Modular synths",
+		"Sound Synthesis",
+		"Modular synthesizers",
 		"Experimental electronic music",
 		"Film photography",
 		"Electronic for audio",

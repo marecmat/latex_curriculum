@@ -7,7 +7,9 @@
                             \foreach \x [count=\i] in \storedList {\item \x}}
 \newcommand{\addListOfFields}[2]{\JSONParseArrayMapInline{\myJSONdata}{#1}{#2}}
 
-\begin{document}\begin{small_column}
+\begin{document}
+\begin{small_column}
+
 \contact
     {\addField{contact.web}}
     {\addField{contact.mail}}
@@ -51,4 +53,5 @@
 }
 \section{Publications}{\small{\vspace*{-7mm}\begin{itemize}\addList{publications}\end{itemize}\vspace*{3mm}}}
 \section{Interests}{\subsection{}{}{}{}{\addList{interests}}{2}}	
-\end{big_column}\end{document}
+\end{big_column}
+\end{document}

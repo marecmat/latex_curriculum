@@ -22,7 +22,6 @@
 \definecolor{lightgray}{HTML}{999999}
 \definecolor{accent}{HTML}{381c80}
 
-
 % Required snippets from the fontawesome package
 \RequirePackage{fontspec}
 \newfontfamily{\FA}{FontAwesome}
@@ -54,16 +53,16 @@
 	[2em]\end{center}\small{#4}\vspace*{1cm}\\}
 
 	
-\newcommand{\contact}[6]{\small \begin{center} \vspace*{-1.6cm} 
-	\includegraphics[width=120pt]{#6}\\[2em] \section{Contact}{\vspace{1mm}\begin{tabular}{cl}
+\newcommand{\contact}[6]{\small \begin{center} \vspace*{-2.5cm} 
+	\includegraphics[width=120pt]{#6}\\[2em] \section{Contact}{\vspace{3mm}\begin{tabular}{cl}
 		% website
-	\textcolor{accent}{\text{\faLink}}:& 				\quad \texttt{#1} \\
-	\resizebox{7pt}{!}{\textcolor{accent}{\faEnvelope}}& \,\,\, {#2}\\[.3em]
-	\textcolor{accent}{\faMobile}& \,\,\,{#3}\\[.3em]
-	\textcolor{accent}{\faMapMarker}& \,\,\, {#4}\\[-1pt] & \,\,\, {#5} 
+	\textcolor{accent}{\text{\faLink}}\,\,\,&\texttt{#1}\\[.3em]
+	\resizebox{7pt}{!}{\textcolor{accent}{\faEnvelope}}\,\,\,&\texttt{#2}\\[.3em]
+	\textcolor{accent}{\faMobile}\,\,\,&{#3}\\[.3em]
+	\textcolor{accent}{\faMapMarker}\,\,\,&{#4}\\[-1pt] \,\,\, &{#5} 
 	\end{tabular}}{}\end{center}}
 
-
+\setlength{\columnsep}{1.5cm}
 \renewcommand{\section}[2]{\textsf{\Large{\textbf{\textcolor{accent}{#1}}}}\textcolor{accent}{\vhrulefill{1pt}}\vspace*{1mm}\\ #2}
 \renewcommand{\subsection}[6]{
 	\checkemptylabel{#1}{\large{\textbf{#1}}\hfill\vspace*{2pt}}{} 										%Intitulé
