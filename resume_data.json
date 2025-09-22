@@ -1,0 +1,123 @@
+{
+	"header": {
+		"name1": "Mathieu",
+		"name2": "Maréchal",
+		"position1": "3rd year PhD student",
+		"position2": "Acoustics",
+		"description": "Here is a small text that discusses the goal of my application and presents myself quickly something. I will not discuss extensively any precise topics, simply do a presentation with a few key elements, basically an abstract of an appended cover letter for the application to the job I would like to apply to."
+	},
+
+	"contact": {
+		"mail": "mmarec@univ-lemans.fr",
+		"phone": "+33 (0)6 52 36 91 76",
+		"address1": "1, rue Notre Dame",
+		"address2": "72000 Le Mans, France",
+		"photo": "layout/photo.png"
+	},
+
+	"skills": [
+		"Data analysis and depiction",
+		"Presentations",
+		"Project organisation",
+		"Problem solving with numerical tools"
+	],
+
+	"knowledge": [
+		"Wave propagation (EM, acoustics)",
+		"Poroelastic waves in periodic geometries",
+		"Numerical methods",
+		"Guided waves",
+		"Differential calculus, Linear Algebra",
+		"Signal processing, instrumentation"
+	],
+
+	"programming": [
+		"Python",
+		"Latex",
+		"Linux",
+		"Web server and networks"
+	],
+
+	"softwares": [
+		"COMSOL Multiphysics",
+		"Inkscape",
+		"MS Office",
+		"Adobe Suite"
+	],
+
+	"languages": [
+		{"name": "French", "level": "native", "comment": "/"},
+		{"name": "English", "level": "C2 (CEFR)", "comment": "Fluent technical level\\\\Erasmus program (2 semesters) in Prague with english courses"},
+		{"name": "German", "level": "B1 (CEFR)", "comment": "Lived 2 month as part of the Brigitte Sauzay exchange program"}
+	],
+
+	"curriculum":[
+		{
+			"name":"PhD thesis", 
+			"organisation": "LAUM, Le Mans Université", 
+			"place": "Le Mans, France", 
+			"when": "Oct. 2022 - December 2025", 
+			"comment": [
+				"University doctoral Scholarship at Laboratoire d'Acoustique de l'Université du Mans",
+				"Research on metaporoelastic surfaces and interfaces for the joint mitigation of acoustic and elastic energies",
+				"Numerical methods for the computation of dispersion relations",
+				"Teaching experience: Master course on TMM and bachelor-level acoustics practicals sessions"
+			]
+		},
+
+		{
+			"name":"MSc Degree in Wave Physics and Acoustics", 
+			"organisation": "Le Mans Université", 
+			"place": "Le Mans, France", 
+			"when": "Sept. 2020 - July 2022", 
+			"comment": [
+				"International Master's degree in Wave physics and Acoustics",
+				"2 year-long project on acoustic absorption by metaporoelastic materials",
+				"Education on academic research and various topics on wave propagation and phenomena"
+			]
+		},
+		{
+			"name":"L3 Erasmus", 
+			"organisation": "Czech Technical University", 
+			"place": "Prague, Czech Rep.", 
+			"when": "Sept. 2019 - June 2020", 
+			"comment": [
+				"Last year of Bachelor at CTU, Prague",
+				"Projects on wireless communication and radio antennas and acoustic event detection with a microphone array"
+			]
+		},
+		{
+			"name":"Licence SPI CMI", 
+			"organisation": "Le Mans Université", 
+			"place": "Le Mans, France", 
+			"when": "Sept. 2017 - June 2020", 
+			"comment": [
+				"Licence de sciences pour l'ingénieur (engineering sciences), acoustics and vibrations",
+				"Internship: Acoustic study of a ball impact on a water surface"
+			]
+		},
+
+		{
+			"name":"Baccalauréat scientifique", 
+			"organisation": "Lycée Cassini", 
+			"place": "Clermont de l'Oise", 
+			"when": "July 2017", 
+			"comment": [
+				"Mention très bien"
+			]
+		}
+
+	],
+
+	"publications": [
+		"JAP 2025",
+		""	],
+	"interests": [
+		"Sound Synthesis (Modular)",
+		"Experimental electronic music",
+		"Film photography",
+		"Bass guitar",
+		"Bouldering",
+		"Reading"
+	]
+}
