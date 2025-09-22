@@ -4,7 +4,7 @@
 \newcommand{\addList}[1]{\JSONParseArrayUse[store in=\storedList]{\myJSONdata}{#1}[]{,} \foreach \x [count=\i] in \storedList {\item \x}}
 \newcommand\addListOfFields[2]{\JSONParseArrayMapInline{\myJSONdata}{#1}{#2}}
 \begin{document}\begin{small_column}
-\contact{\addField{contact.mail}}{\addField{contact.phone}}{\addField{contact.address1}}{\addField{contact.address2}}{layout/photo.png}
+\contact{\addField{contact.web}}{\addField{contact.mail}}{\addField{contact.phone}}{\addField{contact.address1}}{\addField{contact.address2}}{layout/photo.png}
 \section{Skills}{\subsection{}{}{}{}{\addList{skills}}
 \subsection{Knowledge}{}{}{}{\addList{knowledge}}
 \subsection{Programming}{}{}{}{\addList{programming}}

@@ -32,21 +32,19 @@
 \renewcommand{\labelitemi}{\textcolor{accent}{•}}
 \newcommand{\bulletsep}{\kern-.7em\raisebox{-.5em}{\scalebox{2.5}{\textperiodcentered}}\kern-.5em}
 \newcommand{\checkemptylabel}[3]{\ifthenelse{\isempty{#1}}{#3}{#2}}
-\makeatletter\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}\makeatother
+\makeatletter\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
 \newenvironment{small_column}{\begin{minipage}[t][24cm]{0.35\linewidth}}{\end{minipage}~\hfill}
 \newenvironment{big_column}{\begin{minipage}[t][24cm]{0.62\linewidth}}{\end{minipage}~\hfill}
 \newcommand{\name}[2]{{\Huge{\textsf{#1 \textbf{\textcolor{accent}{#2}}}}}}
 \newcommand{\header}[4]{\vspace*{-1.6cm}\begin{center}\name{#1}{#2}\\ \textcolor{lightgray}{#3}\\[2em]\end{center}\small{#4}\vspace*{1cm}\\}
-\newcommand{\contact}[5]{\small \begin{center} \vspace*{-1.6cm} 
-	\includegraphics[width=120pt]{#5}\\[2em] 
-	\section{Contact}{
-	\vspace{1mm}
-	\begin{tabular}{cl}
+\newcommand{\contact}[6]{\small \begin{center} \vspace*{-1.6cm} 
+	\includegraphics[width=120pt]{#6}\\[2em] \section{Contact}{\vspace{1mm}\begin{tabular}{cl}
 		% website
-	\text{\faLink}:& 				\quad \texttt{www.mmarechal.fr} \\
-	\resizebox{7pt}{!}{\textcolor{accent}{\faEnvelope}}& \,\,\, {#1}\\[.3em]
-	\textcolor{accent}{\faMobile}& \,\,\,{#2}\\[.3em]
-	\textcolor{accent}{\faMapMarker}& \,\,\, {#3}\\[-1pt] & \,\,\, {#4} 
+	\text{\faLink}:& 				\quad \texttt{#1} \\
+	\resizebox{7pt}{!}{\textcolor{accent}{\faEnvelope}}& \,\,\, {#2}\\[.3em]
+	\textcolor{accent}{\faMobile}& \,\,\,{#3}\\[.3em]
+	\textcolor{accent}{\faMapMarker}& \,\,\, {#4}\\[-1pt] & \,\,\, {#5} 
 	\end{tabular}}{}\end{center}}
 \renewcommand{\section}[2]{\textsf{\Large{\textbf{\textcolor{accent}{#1}}}}\textcolor{accent}{\vhrulefill{1pt}}\vspace*{1mm}\\ #2}
 \renewcommand{\subsection}[5]{
