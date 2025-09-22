@@ -1,19 +1,54 @@
 \documentclass{layout/curriculum}
+% json data loading
 \JSONParseFromFile{\myJSONdata}{resume_data.json}
+% parsing macros
 \newcommand{\addField}[1]{\JSONParseValue{\myJSONdata}{#1}}
-\newcommand{\addList}[1]{\JSONParseArrayUse[store in=\storedList]{\myJSONdata}{#1}[]{,} \foreach \x [count=\i] in \storedList {\item \x}}
-\newcommand\addListOfFields[2]{\JSONParseArrayMapInline{\myJSONdata}{#1}{#2}}
+\newcommand{\addList}[1]{\JSONParseArrayUse[store in=\storedList]{\myJSONdata}{#1}[]{,} 
+                            \foreach \x [count=\i] in \storedList {\item \x}}
+\newcommand{\addListOfFields}[2]{\JSONParseArrayMapInline{\myJSONdata}{#1}{#2}}
+
 \begin{document}\begin{small_column}
-\contact{\addField{contact.web}}{\addField{contact.mail}}{\addField{contact.phone}}{\addField{contact.address1}}{\addField{contact.address2}}{layout/photo.png}
-\section{Skills}{\subsection{}{}{}{}{\addList{skills}}
-\subsection{Knowledge}{}{}{}{\addList{knowledge}}
-\subsection{Programming}{}{}{}{\addList{programming}}
-\subsection{Software}{}{}{}{\addList{softwares}}}
-\section{Languages}{\addListOfFields{languages}{\subsection{\addField{languages[#1].name}}{}{\addField{languages[#1].level}}{}{\ifthenelse{\isempty{\addField{languages[#1].comment}}}{}{\item \addField{languages[#1].comment}}}}}
+\contact
+    {\addField{contact.web}}
+    {\addField{contact.mail}}
+    {\addField{contact.phone}}
+    {\addField{contact.address1}}
+    {\addField{contact.address2}}
+    {layout/photo.png}
+
+\section{Skills}{
+    \subsection{}{}{}{}{\addList{skills}}{1}
+    \subsection{Knowledge}{}{}{}{\addList{knowledge}}{1}
+    \subsection{Programming}{}{}{}{\addList{programming}}{1}
+    \subsection{Software}{}{}{}{\addList{softwares}}{1}
+}
+
+\section{Languages}{
+    \addListOfFields{languages}{\subsection
+        {\addField{languages[#1].name}}{}
+        {\addField{languages[#1].level}}{}
+        {\item \addField{languages[#1].comment}}{1}
+    }
+}
+
 \end{small_column}~ % no blank line between these two or big problems !!!
 \begin{big_column}
-\header{\addField{header.name1}}{\addField{header.name2}}{\addField{header.position1} \bulletsep \addField{header.position2}}{\addField{header.description}}
-\section{Curriculum}{\addListOfFields{curriculum}{\subsection{\addField{curriculum[#1].name}}{\addField{curriculum[#1].organisation}}{\addField{curriculum[#1].place}}{\addField{curriculum[#1].when}}{\addList{curriculum[#1].comment}}}}
-\section{Publications}{\vspace*{-7mm}\begin{itemize}\addList{publications}\end{itemize}\vspace*{3mm}}
-\section{Interests}{\subsection{}{}{}{}{\addList{interests}}}	
+
+\header
+    {\addField{header.name1}}
+    {\addField{header.name2}}
+    {\addField{header.position1} \bulletsep \addField{header.position2}}
+    {\addField{header.description}}
+
+\section{Curriculum}{
+    \addListOfFields{curriculum}{\subsection
+        {\addField{curriculum[#1].name}}
+        {\addField{curriculum[#1].organisation}}
+        {\addField{curriculum[#1].place}}
+        {\addField{curriculum[#1].when}}
+        {\addList{curriculum[#1].comment}}{1}
+    }
+}
+\section{Publications}{\small{\vspace*{-7mm}\begin{itemize}\addList{publications}\end{itemize}\vspace*{3mm}}}
+\section{Interests}{\subsection{}{}{}{}{\addList{interests}}{2}}	
 \end{big_column}\end{document}

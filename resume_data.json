@@ -8,7 +8,7 @@
 	},
 
 	"contact": {
-		"web": "rocher-ensoleille.fr",
+		"web": "rocher-ensoleille.fr/cv",
 		"mail": "mmarec@univ-lemans.fr",
 		"phone": "+33 (0)6 52 36 91 76",
 		"address1": "1, rue Notre Dame",
@@ -111,14 +111,16 @@
 	],
 
 	"publications": [
-		"JAP 2025",
-		""	],
+		"A general spectral collocation method for computing the dispersion relations of guided acoustic waves in multilayer dissipative structures in J. Appl. Phys. 137 (10) 104902. 2025",
+		""	
+	],
 	"interests": [
-		"Sound Synthesis (Modular)",
+		"Sound Synthesis and Modular synths",
 		"Experimental electronic music",
 		"Film photography",
-		"Bass guitar",
-		"Bouldering",
-		"Reading"
+		"Electronic for audio",
+		"Guitar, bass and banjo",
+		"Reading",
+		"Bouldering"
 	]
 }
